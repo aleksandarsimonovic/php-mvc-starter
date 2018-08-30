@@ -1,6 +1,8 @@
 <?php
 
-namespace App\Config;
+namespace App\Db;
+
+use App\Config\DbConfig;
 
 class DatabaseConfig extends DbConfig
 {

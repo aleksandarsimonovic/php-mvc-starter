@@ -2,10 +2,10 @@
 
 namespace App\Db;
 
-use App\Config\DbConfig;
 use PDO;
 use Exception;
 use InvalidArgumentException;
+use App\Config\DbConfig;
 
 class Database
 {
@@ -36,7 +36,7 @@ class Database
 
             $this->connection->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
             $this->connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $this->connection->exec("set names utf8");
+            $this->connection->exec("SET NAMES UTF8");
 
         } catch (Exception $e) {
             throw new Exception($e->getMessage());

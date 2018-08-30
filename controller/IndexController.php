@@ -7,13 +7,8 @@ class IndexController extends BaseController
     public $content = '';
     public $action = 'index';
     public $tpl = 'layout.tpl.php';
-    protected $viewDir = __DIR__ . '/../view/index/';
+    protected $viewDir = __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'public' . DIRECTORY_SEPARATOR . 'index' . DIRECTORY_SEPARATOR;
     protected $connection;
-
-    public function __construct()
-    {
-        parent::__construct();
-    }
 
     public function index()
     {

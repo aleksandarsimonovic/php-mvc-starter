@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-use App\Config\DatabaseConfig;
+use App\Db\DatabaseConfig;
 use App\Db\Database;
 use Exception;
 use InvalidArgumentException;
